@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack title and nav vertically initially */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Style the title */
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Adjust as needed */
+}
+
+/* Style the navigation */
+nav {
+    width: 100%; /* Make nav take full width */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make list items horizontal */
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+nav ul li {
+    display: block; /* Change back to block for better spacing control */
+    margin: 0; /* Remove default margins */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Add padding for button-like appearance */
+    display: block; /* Make links fill the list item */
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+nav a:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 400px; /* Adjust as needed */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position:relative;
+    bottom:0;
+    width:100%;
+}
+
+.calendar-placeholder {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.facebook-embed {
+    margin-bottom: 20px;
+}
+
+/* Media query for larger screens to arrange title and nav horizontally */
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+    header {
+        flex-direction: row; /* Arrange title and nav horizontally */
+        justify-content: space-between; /* Distribute space between title and nav */
+        align-items: center; /* Vertically align items in the header */
+        padding: 10px 20px; /* Add padding to the header */
+    }
+
+    /* Adjust navigation width for larger screens */
+    nav {
+        width: auto; /* Reset width to auto */
+    }
+}
+
+/* Add more styles as needed */
