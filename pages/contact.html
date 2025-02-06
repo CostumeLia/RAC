@@ -1,22 +1,55 @@
 <section id="contact">
     <h2>Contact the Board</h2>
-    <p>[General contact information for the Raytown Arts Coalition (optional).]</p>
+    <p>The Raytown Arts Coalition welcomes hearing from the community! If you have questions, comments, or concerns, please reach out to the appropriate Board Member. Or, sign up for our mailing list to be notified when RAC posts upcoming events!</p>
 
     <h3>Board Members</h3>
     <ul>
         <li>
-            <strong>[Board Member Name]</strong> - [Title]
+            <strong>David Rogers</strong> - President
             <a href="mailto:[Email Address]">[Email Address]</a>
         </li>
         <li>
-            <strong>[Board Member Name]</strong> - [Title]
+            <strong>Andrew Draker</strong> - Treasurer
             <a href="mailto:[Email Address]">[Email Address]</a>
         </li>
         <li>
-            <strong>[Board Member Name]</strong> - [Title]
+            <strong>Mike Hadley</strong> - Board Member
+            <a href="mailto:[Email Address]">[Email Address]</a>
+        </li>
+        <li>
+            <strong>Jessica Jones</strong> - Board Member
             <a href="mailto:[Email Address]">[Email Address]</a>
         </li>
         <!-- Add more board members as needed -->
     </ul>
-    <p> Join our Mailing List</p>
+    <h3> Join our Mailing List</h3>
+
+    <form id="mailingListForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div><br>
+
+        <div class="form-group">
+            <label>Please choose each event you wish to be notified about:</label><br>
+            <input type="checkbox" id="summerMusical" name="interests" value="summerMusical">
+            <label for="summerMusical">Summer Musical</label><br>
+
+            <input type="checkbox" id="band" name="interests" value="band">
+            <label for="band">Band</label><br>
+
+            <input type="checkbox" id="choir" name="interests" value="choir">
+            <label for="choir">Choir</label>
+
+        </div>
+
+        <button type="submit">Sign Up</button>
+        <p id="form-message"></p>  <!-- For displaying success/error messages -->
+    </form>
+
 </section>
